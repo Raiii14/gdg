@@ -1,0 +1,89 @@
+.history {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.history h2 {
+  font-size: 1.5rem;
+  color: var(--ink);
+}
+.history-sub {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 450;
+}
+.history-loading {
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 450;
+}
+
+.history-empty {
+  text-align: center;
+  padding: 48px 0;
+  color: var(--text-muted);
+  font-weight: 450;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-card {
+  background: var(--white);
+  border: 1px solid var(--text-whisper);
+  border-radius: var(--r-btn);
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeInUp 0.3s ease forwards;
+  box-shadow: var(--shadow-sm);
+}
+
+.history-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.history-card-header h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+.history-date {
+  font-size: 0.75rem;
+  color: var(--text-whisper);
+  font-weight: 450;
+}
+
+.history-reason {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  font-weight: 450;
+}
+
+.history-people {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.history-tag {
+  background: var(--canvas);
+  border-radius: var(--r-pill);
+  padding: 3px 12px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.history-blame {
+  font-size: 0.82rem;
+  color: var(--signal-orange);
+  font-style: italic;
+  font-weight: 450;
+}

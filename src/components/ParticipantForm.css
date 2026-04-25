@@ -1,0 +1,114 @@
+.pform {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.pform h2 {
+  font-size: 1.6rem;
+  color: var(--ink);
+}
+.pform-sub {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 450;
+}
+
+.pform-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pform-field {
+  background: var(--white);
+  border: 1.5px solid var(--text-whisper);
+  border-radius: var(--r-btn);
+  padding: 14px 20px;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: var(--font);
+  font-weight: 450;
+  outline: none;
+  transition: border-color 0.2s;
+  resize: none;
+}
+.pform-field:focus {
+  border-color: var(--ink);
+}
+.pform-field::placeholder {
+  color: var(--text-whisper);
+  font-weight: 450;
+}
+
+.pform-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pform-list h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+.pform-list h3::before {
+  content: '• ';
+  color: var(--light-orange);
+}
+
+.pform-card {
+  background: var(--white);
+  border: 1px solid var(--text-whisper);
+  border-radius: var(--r-btn);
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  animation: fadeInUp 0.3s ease forwards;
+  box-shadow: var(--shadow-sm);
+}
+.pform-card strong {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+.pform-pref {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+  font-weight: 450;
+}
+.pform-remove {
+  background: none;
+  border: none;
+  color: var(--text-whisper);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0 4px;
+  transition: color 0.2s;
+}
+.pform-remove:hover { color: var(--signal-orange); }
+
+.resolve-btn {
+  width: 100%;
+  margin-top: 12px;
+  font-size: 1.1rem;
+  padding: 16px;
+  border-radius: var(--r-card);
+  background: var(--signal-orange);
+  border-color: var(--signal-orange);
+  color: var(--white);
+}
+.resolve-btn:hover {
+  box-shadow: 0 8px 32px rgba(207, 69, 0, 0.25);
+}
+
+.pform-hint {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 450;
+}

@@ -1,0 +1,108 @@
+.processing {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-top: 48px;
+}
+.processing h2 {
+  font-size: 1.5rem;
+  color: var(--ink);
+}
+.processing-sub {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 450;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step {
+  background: var(--white);
+  border: 1.5px solid var(--text-whisper);
+  border-radius: var(--r-card);
+  padding: 20px 24px;
+  transition: all 0.4s ease;
+  animation: fadeInUp 0.4s ease forwards;
+  box-shadow: var(--shadow-sm);
+}
+.step-loading {
+  border-color: var(--light-orange);
+  box-shadow: 0 8px 32px rgba(243, 115, 56, 0.1);
+}
+.step-done {
+  border-color: var(--ink);
+}
+.step-error {
+  border-color: var(--signal-orange);
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.step-emoji {
+  width: 48px;
+  height: 48px;
+  background: var(--canvas);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+.step-meta { flex: 1; }
+.step-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+.step-meta h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 2px;
+  color: var(--ink);
+}
+.step-icon { font-size: 1.2rem; }
+
+.step-desc {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 450;
+  animation: pulse 1.5s ease infinite;
+}
+
+.step-result {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+.step-result-item {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  font-weight: 450;
+}
+.step-commentary {
+  font-size: 0.88rem;
+  color: var(--signal-orange);
+  margin-top: 4px;
+  font-style: italic;
+  font-weight: 450;
+}
+.step-error {
+  margin-top: 8px;
+  color: var(--signal-orange);
+  font-size: 0.88rem;
+}

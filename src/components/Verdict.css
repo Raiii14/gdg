@@ -1,0 +1,129 @@
+.verdict {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-top: 24px;
+}
+
+.verdict-header {
+  text-align: center;
+}
+.verdict-emoji {
+  width: 80px;
+  height: 80px;
+  background: var(--white);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 12px;
+}
+.verdict-header h2 {
+  font-size: 1.5rem;
+  color: var(--ink);
+}
+
+.verdict-card {
+  background: var(--white);
+  border: 1.5px solid var(--ink);
+  border-radius: var(--r-card);
+  overflow: hidden;
+  animation: fadeInUp 0.5s ease forwards;
+  box-shadow: var(--shadow-md);
+}
+
+.verdict-pick {
+  background: var(--ink);
+  padding: 28px 24px;
+  text-align: center;
+  color: var(--canvas);
+}
+.verdict-pick-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  opacity: 0.6;
+}
+.verdict-pick-name {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin: 6px 0;
+}
+.verdict-cuisine {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  font-weight: 450;
+}
+
+.verdict-section {
+  padding: 18px 24px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+.verdict-section h3 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.verdict-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  font-weight: 450;
+}
+
+.verdict-blame {
+  background: rgba(207, 69, 0, 0.04);
+}
+
+.verdict-gc-msg {
+  background: var(--canvas);
+  border: 1px solid var(--text-whisper);
+  border-radius: var(--r-btn);
+  padding: 14px 16px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+  font-weight: 450;
+}
+
+.verdict-participants {
+  text-align: center;
+}
+.verdict-participants h3 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+.verdict-names {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.verdict-name-tag {
+  background: var(--white);
+  border: 1px solid var(--text-whisper);
+  border-radius: var(--r-pill);
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+}
+
+.verdict-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

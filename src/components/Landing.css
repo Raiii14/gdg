@@ -1,0 +1,74 @@
+.landing {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 48px;
+}
+
+.landing-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.landing-emoji {
+  width: 100px;
+  height: 100px;
+  background: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.8rem;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 8px;
+}
+
+.landing-title {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.landing-tagline {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-weight: 450;
+  margin-top: 4px;
+}
+
+.landing-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 380px;
+  font-weight: 450;
+}
+
+.landing-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.landing-actions .btn-primary {
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  border-radius: var(--r-card);
+}
+
+.landing-footer {
+  font-size: 0.8rem;
+  color: var(--text-whisper);
+  margin-top: auto;
+  padding-top: 40px;
+  font-weight: 450;
+}
