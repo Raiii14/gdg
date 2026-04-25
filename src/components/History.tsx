@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getSessions, type SessionData } from '../lib/firebase'
+import { getSessions, type SessionData } from '../lib/supabase'
 import './History.css'
 
 interface Props {

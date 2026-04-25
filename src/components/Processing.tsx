@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import type { Participant, SessionResult } from '../App'
 import { parsePreferences, negotiateConflicts, deliverVerdict } from '../lib/gemini'
-import { saveSession } from '../lib/firebase'
+import { saveSession } from '../lib/supabase'
 import './Processing.css'
 
 interface Props {
@@ -67,8 +67,8 @@ export default function Processing({ participants, onComplete }: Props) {
         createdAt: Date.now(),
       }
 
-      // Save to Firebase (don't block on failure)
-      saveSession(session).catch(err => console.warn('Firebase save failed:', err))
+      // Save to Supabase (don't block on failure)
+      saveSession(session).catch(err => console.warn('Supabase save failed:', err))
 
       setTimeout(() => onComplete(session), 1200)
     } catch (err: any) {

@@ -47,7 +47,7 @@ Return JSON with this EXACT structure:
 Be funny and use Taglish in the summaries. If their input is vague like "kahit saan", roast them gently.`;
 
   const result = await model.generateContent(prompt);
-  return JSON.parse(result.response.text());
+  return safeParseJSON(result.response.text());
 }
 
 // Step 2: Find conflicts and negotiate
@@ -68,7 +68,7 @@ Return JSON with this EXACT structure:
 Be snarky but helpful. Use Taglish humor. If there are no real conflicts, make fun of how boring and agreeable they are.`;
 
   const result = await model.generateContent(prompt);
-  return JSON.parse(result.response.text());
+  return safeParseJSON(result.response.text());
 }
 
 // Step 3: Deliver the final verdict
@@ -95,5 +95,5 @@ Return JSON with this EXACT structure:
 Make it hilarious. The verdict should feel like a Supreme Court decision but for lunch.`;
 
   const result = await model.generateContent(prompt);
-  return JSON.parse(result.response.text());
+  return safeParseJSON(result.response.text());
 }
