@@ -3,6 +3,13 @@ import { createClient } from '@supabase/supabase-js'
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
 const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
 
+console.log('DEBUG Supabase:', {
+  hasUrl: !!supabaseUrl,
+  urlStart: supabaseUrl?.substring(0, 10),
+  hasKey: !!supabaseAnonKey,
+  keyLength: supabaseAnonKey?.length
+})
+
 if (!supabaseUrl || !supabaseAnonKey) {
   console.warn('Supabase credentials missing! Check your .env.local or Vercel settings.')
 }

@@ -10,14 +10,6 @@ const model = genAI.getGenerativeModel({
   },
 });
 
-// Safe debug log for production
-const key = import.meta.env.VITE_GEMINI_API_KEY;
-if (!key) {
-  console.error("DEBUG: VITE_GEMINI_API_KEY is missing!");
-} else {
-  console.log(`DEBUG: Key found. Length: ${key.length}, Starts with: ${key.substring(0, 7)}...`);
-}
-
 // Safely parse JSON even if Gemini wraps it in markdown code fences
 function safeParseJSON(text: string) {
   const cleaned = text.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/i, '').trim();
